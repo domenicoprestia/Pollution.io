@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: radial-gradient(ellipse at center, #373a41, #50455c);
+    height: 100vh;
+}
+
+
+.pollutionLogo{
+ height: 50px;
+}
+
+.alert{
+    font-size: 15px;
+}
+
+.infoIMG{
+    height: 50px;
+    padding-right: 5px;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.pollutionIO{
+    width: 110%;
+    max-width: 760px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    background-color: rgba(39, 16, 39, 0.329);
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    min-width: 700px;
+}
+
+.wrap{
+    width: 80%;
+    margin: auto;
+}
+
+.header{
+    background-image: linear-gradient(to right bottom, rgba(32,32,34,0.5), rgba(38, 25, 53, 0.8)), url("../img/headerpollution.jpg");
+    background-size: cover;
+    padding: 50px;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.header .overflow h1{
+    margin : 0;
+    margin-left: 5px;
+    animation: slideInHeader 0.5s ease both ;
+    text-align: left;
+    font-size: 30px;
+}
+
+.search_input {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+    background: rgba(64, 55, 73, 0.767);
+    transform: translateY(-30%);
+   
+}
+
+.search_input input{
+    width: calc(80%);
+    border-top-left-radius:5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    outline: none;
+    display: inline-block;
+    height: 40px;
+    border: transparent;
+    background-color: rgba(38, 25, 53, 0.7);
+    color: white;
+}
+/*
+.suggestions{
+    width: calc(80%);
+    padding: 10px;
+    outline: none;
+    display: inline-block;
+    height: 40px;
+    border: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.suggestions > div{
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    transition: color 300ms;
+    background-color: rgba(38, 25, 53, 0.7);
+}
+
+.suggestions > div:hover{
+    background-color: rgba(25, 25, 53, 0.7);
+}
+*/
+.search_input input::placeholder{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.search_btn{
+    animation: slideInBtn  0.3s ease both;
+}
+
+.search_input .search_btn{
+    display: inline-block;
+    border: none;
+    padding: 12px;
+    background-color: rgb(38, 25, 53);
+    color: rgb(69, 56, 83);
+    transition: color 350ms;
+    cursor: pointer;
+    outline: none;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateX(-3px);
+}
+
+.search_btn:hover{
+    color: white;
+}
+
+
+.alert{
+font-size: small;
+animation: slideInAlert 0.3s ease both;
+}
+
+.locationContainer{
+    margin-top: 40px;
+}
+
+.locationContainer li{
+    display: flex;
+    align-items: center;
+    background-color: rgba(64, 55, 73, 0.767);
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 5px;
+    width: 100%;
+    transform: translateX(-19px);
+    animation: slideInInformations 0.3s ease both ;
+}
+.overflow3{
+    overflow: hidden;
+    transform: translateX(-19px);
+}
+
+.scroll_down{
+    text-decoration: none;
+}
+
+#scroll{
+    border: transparent;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+    color: rgba(38, 25, 53, 0.7);
+    transition: color 650ms;
+    text-decoration: none;
+   
+}
+#scroll:hover{
+    text-decoration: none;
+    color: white;
+}
+scroll:visited{
+    text-decoration: none;
+}
+
+.about_pollution{
+    width: 100%;
+    min-height: 50vh;
+    max-width: 50rem;
+    margin: auto
+}
+
+.about_pollution .container_pollution{
+    background-color: rgba(39, 16, 39, 0.329);
+    color: white;
+    border-radius: 20px;
+    animation: slideInHeader 0.5s ease both ;
+    margin-top: 350px;
+}
+
+.title_pollution{
+    padding-top: 30px;
+    text-align: left;
+}
+
+.pollution_info{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+hr{
+    color: rgba(38, 25, 53, 0.7);
+}
+
+.about_pollution .container_pm{
+    background-color: rgba(39, 16, 39, 0.329);
+    color: white;
+    border-radius: 20px;
+    animation: slideInHeader 0.5s ease both ;
+    margin-top: 60px;
+}
+
+.title_pm{
+    font-size: 25px;
+}
+
+.bounceOut{
+    animation: slideOutAlert 0.3s ease both;
+}
+
+
+
+@keyframes slideInHeader{
+    0%{
+        transform: translateX(-250px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideInBtn{
+    0%{
+        transform: translateX(1000px);
+
+    }
+    100%{
+        transform:  translateX(-10px);
+    }
+}
+@keyframes slideInAlert{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideOutformations
+{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-250px);
+    }
+}
+
+@keyframes slideInInformations
+{
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideOutAlert{
+    0%{
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(+1000px);
+    }
+}
+
