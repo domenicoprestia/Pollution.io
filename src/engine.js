@@ -9,7 +9,7 @@ formIn.addEventListener('submit', handleForm);
 
 
 searchBtn.addEventListener('click', function() {
-    if(alert.textContent != "Powered by AICQN 😷")
+    if(alert.textContent != "Powered by AICQN 😷" && cityIn.value != "")
     {
         alert.classList.add("bounceOut")
             setTimeout(() => {
