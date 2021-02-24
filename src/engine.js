@@ -15,7 +15,7 @@ searchBtn.addEventListener('click', function() {
             setTimeout(() => {
                 alert.classList.remove("bounceOut")
                 alert.textContent = "Powered by AICQN 😷"
-            }, 400);
+            }, 500);
     }
     if(cityIn.value != "")
     {
