@@ -17,7 +17,7 @@ During development i used html, css, js, and webpack (for learning purpuoses)
 
 
 ## Meta
-
+Site link - https://gallant-mccarthy-49792d.netlify.app/
 Your Name – [@domenicooprestia](https://www.instagram.com/domenicooprestia/) – domenicoprestiaa@hotmail.com
 
 
